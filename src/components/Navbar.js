@@ -11,7 +11,7 @@ function Navbar() {
     margin: "0 6px 6px",
     // background: "blue",
     textDecoration: "none",
-    color: "black",
+    color: "white",
   };
   return (
     <nav>

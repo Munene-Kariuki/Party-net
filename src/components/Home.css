@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(#5F1230, #5F1230, #3F031A, #490721);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.home {
+  display: flex;
+}
+
+.container {
+  width: 50%;
+}
+
+img {
+  width: 50%;
+}
+
+h3 {
+  font-family: 'MedievalSharp', cursive;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 4rem;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+h4 {
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 4rem;
+}
+
+h2 {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #141316;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30rem;
+  padding-left: 15rem;
+}
