@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import logo_icon from '../logo_icon.svg'
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -10,9 +11,9 @@ function Navbar() {
       </div>
       <div className='links'>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>Events</a></li>
-          <li><a>About us</a></li>
+          <li><NavLink to="/" exact >Home</NavLink></li>
+          <li><NavLink to="/events" exact >Events</NavLink></li>
+          <li><NavLink to="/aboutus" exact >About us</NavLink></li>
         </ul>
       </div>
       <div className='buttons'>
