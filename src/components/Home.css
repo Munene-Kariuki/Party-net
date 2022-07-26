@@ -9,11 +9,11 @@ body {
 }
 
 .container {
-  width: 50%;
+  width: 45%;
 }
 
 img {
-  width: 50%;
+  width: 55%;
 }
 
 h3 {
@@ -34,11 +34,11 @@ h4 {
   margin-left: 4rem;
 }
 
-h2 {
+.wall-street {
   font-family: 'MedievalSharp', cursive;
   background-color: #141316;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 30rem;
-  padding-left: 15rem;
+  padding-left: 10rem;
 }

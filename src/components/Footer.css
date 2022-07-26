@@ -1,0 +1,38 @@
+.footer {
+  background-color: black;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+}
+
+h2 {
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 1rem;
+}
+
+.appLogo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.social-icons > i {
+  margin: 1rem;
+}
+
+.header {
+  color: green;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.span {
+  margin-right: 1rem;
+}
+
+.google-play {
+  
+}
