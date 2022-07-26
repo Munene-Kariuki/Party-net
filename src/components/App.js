@@ -1,5 +1,4 @@
-// import logo from './';
-// import './App.css';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import Events from './Events';

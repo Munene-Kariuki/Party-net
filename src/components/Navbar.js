@@ -4,6 +4,15 @@ import logo_icon from '../logo_icon.svg'
 import { NavLink } from 'react-router-dom'
 
 function Navbar() {
+  const linkStyles = {
+    display: "inline-block",
+    width: "70px",
+    padding: "12px",
+    margin: "0 6px 6px",
+    // background: "blue",
+    textDecoration: "none",
+    color: "black",
+  };
   return (
     <nav>
       <div>
@@ -11,9 +20,9 @@ function Navbar() {
       </div>
       <div className='links'>
         <ul>
-          <li><NavLink to="/" exact >Home</NavLink></li>
-          <li><NavLink to="/events" exact >Events</NavLink></li>
-          <li><NavLink to="/aboutus" exact >About us</NavLink></li>
+          <li><NavLink to="/" exact style={linkStyles} >Home</NavLink></li>
+          <li><NavLink to="/events" style={linkStyles} exact >Events</NavLink></li>
+          <li><NavLink to="/aboutus" exact style={linkStyles} >About us</NavLink></li>
         </ul>
       </div>
       <div className='buttons'>
