@@ -61,7 +61,19 @@ function Events() {
 
     return renderEvents
   }
-  // renderEvents()
+
+  //Post new event on api and rerender page
+  function handleFormSubmit(formData) {
+    fetch("http://localhost:8000/events",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData)
+    })
+      .then((res) => res.json())
+      .then((obj) => setData([...data, obj]))
+  }
 
   return (
     <div>
@@ -77,10 +89,10 @@ function Events() {
       <h2 className='events-hub'><span className='ev'>Events</span> hub</h2>
 
       <Filter search={search} onCategoryChange={handleCategoryChange} onSearchChange={handleSearchChange} />
-      
+
       <div >{renderEvents()}</div>
 
-      <EventForm />
+      <EventForm onFormSubmit={handleFormSubmit} />
     </div>
   )
 }
