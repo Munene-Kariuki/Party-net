@@ -18,7 +18,15 @@ function Event({ dataObj }) {
         </div>
         <div className='description'>
           <h3 className='name'>{name}</h3>
+          <p className='venue'>{venue}</p>
+          <p className='location'>{location}</p>
         </div>
+      </div>
+      <div className='socio'>
+          <i className="fa-brands fa-square-facebook"></i>
+          <i className="fa-brands fa-square-twitter"></i>
+          <i className="fa-brands fa-square-instagram"></i>
+          <i className="fa-brands fa-linkedin"></i>
       </div>
     </div>
   )
