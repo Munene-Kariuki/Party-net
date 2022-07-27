@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Events.css'
 import Event from './Event'
 import Filter from './Filter'
+import EventForm from './EventForm'
 
 function Events() {
   const [data, setData] = useState([])
@@ -74,8 +75,12 @@ function Events() {
         </div>
       </div>
       <h2 className='events-hub'><span className='ev'>Events</span> hub</h2>
+
       <Filter search={search} onCategoryChange={handleCategoryChange} onSearchChange={handleSearchChange} />
+      
       <div >{renderEvents()}</div>
+
+      <EventForm />
     </div>
   )
 }

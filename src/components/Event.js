@@ -5,6 +5,7 @@ function Event({ dataObj }) {
   //Destructure props
   const {name, image, date, price, venue, location} = dataObj
 
+  const dateArray = date.split(" ")
 
   return (
     // create a card for each object 
@@ -13,8 +14,8 @@ function Event({ dataObj }) {
       <p className='price'>{price}</p>
       <div className='card-body'>
         <div className='date'>
-          <h4 className='month'>{date[0]}</h4>
-          <p className='day'>{date[1]}</p>
+          <h4 className='month'>{dateArray[0]}</h4>
+          <p className='day'>{dateArray[1]}</p>
         </div>
         <div className='description'>
           <h3 className='name'>{name}</h3>
