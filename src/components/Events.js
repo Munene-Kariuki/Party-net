@@ -10,11 +10,31 @@ function Events() {
       .then((res) => res.json())
       .then((r) => setData(r))
   }, [])
-  console.log(data)
+  // console.log(data)
 
   const displayEvents = data.map((eventObj) => {
     return <Event key={eventObj.id} dataObj={eventObj} />
   })
+
+  console.log(displayEvents)
+
+
+  //Render events in rows of 4
+  //Mutates displayEvents into arrays of groups of 4
+  function renderEvents() {
+    let events = []
+    let size = 4
+
+    for(let i = 0; i < displayEvents.length; i += size ) {
+      events.push(displayEvents.slice(i, i + size))
+    }
+    const renderEvents = events.map((eventsRow) => {
+      return <div className='events'>{eventsRow}</div>
+    })
+
+    return renderEvents
+  }
+  // renderEvents()
 
   return (
     <div>
@@ -28,7 +48,7 @@ function Events() {
         </div>
       </div>
       <h2>Events hub</h2>
-      <div>{displayEvents}</div>
+      <div >{renderEvents()}</div>
     </div>
   )
 }
