@@ -1,0 +1,30 @@
+.image {
+  width: 95%;
+  margin-left: 2.5%;
+  /* height: 40rem; */
+}
+
+.btn {
+  padding: 1rem;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+.image-text {
+  position: relative;
+  bottom: 25rem;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+
+.title {
+  font-family: 'MedievalSharp', cursive;
+}
+
+.description {
+  font-family: 'Rajdhani', sans-serif;
+}
+
