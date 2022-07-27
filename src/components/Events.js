@@ -13,7 +13,7 @@ function Events() {
   console.log(data)
 
   const displayEvents = data.map((eventObj) => {
-    return <Event dataObj={eventObj} />
+    return <Event key={eventObj.id} dataObj={eventObj} />
   })
 
   return (
@@ -28,7 +28,7 @@ function Events() {
         </div>
       </div>
       <h2>Events hub</h2>
-      {displayEvents}
+      <div>{displayEvents}</div>
     </div>
   )
 }

@@ -1,0 +1,50 @@
+.card {
+  background-color: white;
+  width: 12rem;
+  color: black;
+}
+
+.card-image {
+  width: 12rem;
+  height: 6rem;
+}
+
+img {
+  border: 5px, solid, green;
+}
+
+.price {
+  color: white;
+  background-color: green;
+  width: 2.5rem;
+  padding: 0.3rem;
+  padding-left: 0.4rem;
+  position: relative;
+  bottom: 6rem;
+  left: 8.8rem;
+}
+
+.card-body {
+  position: relative;
+  bottom: 4rem;
+  display: flex;
+}
+
+.date {
+  width: 30%;
+}
+
+.month {
+  position: relative;
+  right: 3rem;
+}
+
+.day {
+  position: relative;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.description {
+  width: 60%;
+}
