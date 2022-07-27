@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './Events.css'
 import Event from './Event'
+import Filter from './Filter'
 
 function Events() {
   const [data, setData] = useState([])
+  const [category, setCategory] = useState("All")
+  const [search, setSearch] = useState("")
+
 
   // fetch events data from api
   useEffect(() => {
@@ -13,8 +17,28 @@ function Events() {
   }, [])
   // console.log(data)
 
+
+  //Update category to selected item
+  function handleCategoryChange(event) {
+    setCategory(event.target.value);
+  }
+
+  //Update search
+  function handleSearchChange(e) {
+    setSearch(e.target.value)
+  }
+
+  //set items based on search and category selected
+  const itemsToDisplay = data
+    // category
+    .filter(
+      (item) => category === "All" || item.location === `${category} county`
+    )
+    // search term
+    .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
+
   //Pass event data as props to Event component
-  const displayEvents = data.map((eventObj) => {
+  const displayEvents = itemsToDisplay.map((eventObj) => {
     return <Event key={eventObj.id} dataObj={eventObj} />
   })
 
@@ -50,6 +74,7 @@ function Events() {
         </div>
       </div>
       <h2 className='events-hub'><span className='ev'>Events</span> hub</h2>
+      <Filter search={search} onCategoryChange={handleCategoryChange} onSearchChange={handleSearchChange} />
       <div >{renderEvents()}</div>
     </div>
   )
