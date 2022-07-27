@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Events.css'
+import Event from './Event'
 
 function Events() {
   const [data, setData] = useState([])
@@ -7,9 +8,13 @@ function Events() {
   useEffect(() => {
     fetch("http://localhost:8000/events")
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((r) => setData(r))
   }, [])
+  console.log(data)
 
+  const displayEvents = data.map((eventObj) => {
+    return <Event dataObj={eventObj} />
+  })
 
   return (
     <div>
@@ -23,6 +28,7 @@ function Events() {
         </div>
       </div>
       <h2>Events hub</h2>
+      {displayEvents}
     </div>
   )
 }
