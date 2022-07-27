@@ -5,6 +5,7 @@ import Event from './Event'
 function Events() {
   const [data, setData] = useState([])
 
+  // fetch events data from api
   useEffect(() => {
     fetch("http://localhost:8000/events")
       .then((res) => res.json())
@@ -12,6 +13,7 @@ function Events() {
   }, [])
   // console.log(data)
 
+  //Pass event data as props to Event component
   const displayEvents = data.map((eventObj) => {
     return <Event key={eventObj.id} dataObj={eventObj} />
   })
@@ -47,7 +49,7 @@ function Events() {
           <button className='btn'>Post an event</button>
         </div>
       </div>
-      <h2>Events hub</h2>
+      <h2 className='events-hub'><span className='ev'>Events</span> hub</h2>
       <div >{renderEvents()}</div>
     </div>
   )

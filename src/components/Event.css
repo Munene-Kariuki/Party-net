@@ -1,6 +1,6 @@
 .card {
   background-color: white;
-  width: 12rem;
+  width: 15rem;
   color: black;
   font-family: 'Rajdhani', sans-serif;
   height: 20rem;
@@ -10,8 +10,8 @@
 }
 
 .card-image {
-  width: 12rem;
-  height: 8rem;
+  width: 15rem;
+  height: 9rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -28,7 +28,7 @@ img {
   padding-left: 0.4rem;
   position: relative;
   bottom: 6rem;
-  left: 8.8rem;
+  left: 11.8rem;
 }
 
 .card-body {
@@ -79,9 +79,9 @@ img {
 
 /* social media icons */
 .socio {
-  margin-left: 2rem;
+  margin-left: 3.2rem;
   position: relative;
-  bottom: 5rem;
+  bottom: 5.5rem;
 }
 
 .socio i {

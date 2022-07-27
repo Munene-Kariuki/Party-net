@@ -30,6 +30,17 @@
 
 .events {
   display: flex;
-  margin-left: 2rem;
+  margin-left: 1rem;
+}
+
+.events-hub {
+  font-family: 'MedievalSharp', cursive;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.ev {
+  background-color: grey;
+  padding: 0.5rem;
 }
 
