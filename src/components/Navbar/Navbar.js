@@ -20,9 +20,9 @@ function Navbar() {
       </div>
       <div className='links'>
         <ul>
-          <li><NavLink exact to="/" style={linkStyles} >Home</NavLink></li>
-          <li><NavLink to="/events" style={linkStyles} exact >Events</NavLink></li>
-          <li><NavLink to="/reviews" style={linkStyles} >Reviews</NavLink></li>
+          <li><NavLink exact to="/" style={linkStyles} ><strong>Home</strong></NavLink></li>
+          <li><NavLink to="/events" style={linkStyles} ><strong>Events</strong></NavLink></li>
+          <li><NavLink to="/reviews" style={linkStyles} ><strong>Reviews</strong></NavLink></li>
         </ul>
       </div>
       <div className='buttons'>
