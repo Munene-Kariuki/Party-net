@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Reviews from './Reviews';
-import Events from './Events';
-import Footer from './Footer';
-import Home from './Home';
-import Navbar from './Navbar';
+import Reviews from './Reviews/Reviews';
+import Events from './EventsPage/Events';
+import Footer from './Footer/Footer';
+import Home from './Home/Home';
+import Navbar from './Navbar/Navbar';
 
 function App() {
   return (

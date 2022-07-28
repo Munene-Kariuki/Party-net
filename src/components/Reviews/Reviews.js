@@ -19,7 +19,7 @@ function Reviews() {
 
   return (
     <div>
-      <h2 className='title'>REVIEWS</h2>
+      <h2 className='reviews-title'>REVIEWS</h2>
       {displayReviews}
     </div>
   )

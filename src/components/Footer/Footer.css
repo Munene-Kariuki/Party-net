@@ -13,11 +13,16 @@
 h2 {
   font-family: 'Rajdhani', sans-serif;
   margin-left: 1rem;
+  width: fit-content;
 }
 
 .appLogo {
   height: 3rem;
   width: 3rem;
+}
+
+.social-icons{
+  width: fit-content;
 }
 
 .social-icons > i {

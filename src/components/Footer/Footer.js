@@ -5,7 +5,7 @@ import './Footer.css'
 function Footer() {
   return (
     <div className='footer'>
-      <div>
+      <div className='first-container'>
         <div className='title'>
           <img src={logo_icon} alt='logo' className='appLogo' />
           <h2>Party-net</h2>
