@@ -1,0 +1,11 @@
+.review-container {
+  background-color: white;
+  color: black;
+  width: 50%;
+  margin: auto;
+  /* padding: 0.1rem; */
+}
+
+.review-name {
+  font-family: 'Rajdhani', sans-serif;
+}
