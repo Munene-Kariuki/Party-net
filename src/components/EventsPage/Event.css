@@ -9,6 +9,10 @@
   border-radius: 1rem;
 }
 
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
 .card-image {
   width: 15rem;
   height: 9rem;
