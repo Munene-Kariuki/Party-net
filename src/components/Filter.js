@@ -4,7 +4,7 @@ import './Filter.css'
 function Filter({onCategoryChange, onSearchChange, search}) {
   return (
     <div className='filter'>
-      <input type='text' name='search' placeholder='Search by name' value={search} onChange={onSearchChange} />
+      <input className='search' type='text' name='search' placeholder='Search by name' value={search} onChange={onSearchChange} />
       <select name='sort' onChange={onCategoryChange}>
         <option value='All'>All</option>
         <option value='Nairobi'>Nairobi</option>

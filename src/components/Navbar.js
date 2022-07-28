@@ -22,7 +22,7 @@ function Navbar() {
         <ul>
           <li><NavLink exact to="/" style={linkStyles} >Home</NavLink></li>
           <li><NavLink to="/events" style={linkStyles} exact >Events</NavLink></li>
-          <li><NavLink to="/aboutus" style={linkStyles} >About us</NavLink></li>
+          <li><NavLink to="/reviews" style={linkStyles} >Reviews</NavLink></li>
         </ul>
       </div>
       <div className='buttons'>
