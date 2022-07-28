@@ -3,3 +3,13 @@
   margin-left: 23rem;
   text-align: center;
 }
+
+.reviewBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
