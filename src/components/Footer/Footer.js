@@ -28,7 +28,7 @@ function Footer() {
         <h2 className='header'>Quick links</h2>
         <p><span className='span'><i className="fa-solid fa-arrow-right-long"></i></span>Home</p>
         <p><span className='span'><i className="fa-solid fa-arrow-right-long"></i></span>Events</p>
-        <p><span className='span'><i className="fa-solid fa-arrow-right-long"></i></span>About us</p>
+        <p><span className='span'><i className="fa-solid fa-arrow-right-long"></i></span>Reviews</p>
         <p><span className='span'><i className="fa-solid fa-arrow-right-long"></i></span>Sign up</p>
       </div>
       <img src='https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png' alt='google play' className='google-play' />

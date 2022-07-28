@@ -5,6 +5,8 @@ import Events from './EventsPage/Events';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
+import Login from './LogIn/Login';
+import SignUp from './SignUp/SignUp';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path='/' exact element={<Home />} />
         <Route path='/events' element={<Events />} />
         <Route path='/reviews' element={<Reviews />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<SignUp />} />
       </Routes>
       <Footer />
     </div>
