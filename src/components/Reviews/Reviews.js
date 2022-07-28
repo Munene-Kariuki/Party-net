@@ -13,7 +13,7 @@ function Reviews() {
 
   //Fetch reviews from api
   useEffect(() => {
-    fetch("http://localhost:8000/reviews")
+    fetch("https://powerful-springs-00947.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data))
   },[])
@@ -24,7 +24,7 @@ function Reviews() {
   })
 
   function handleReviewFormSubmit(formData) {
-    fetch("http://localhost:8000/reviews", {
+    fetch("https://powerful-springs-00947.herokuapp.com/reviews", {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",

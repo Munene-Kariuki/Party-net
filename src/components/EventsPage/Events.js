@@ -14,7 +14,7 @@ function Events() {
 
   // fetch events data from api
   useEffect(() => {
-    fetch("http://localhost:8000/events")
+    fetch("https://powerful-springs-00947.herokuapp.com/events")
       .then((res) => res.json())
       .then((r) => setData(r))
   }, [])
@@ -66,7 +66,7 @@ function Events() {
 
   //Post new event on api and rerender page
   function handleFormSubmit(formData) {
-    fetch("http://localhost:8000/events",{
+    fetch("https://powerful-springs-00947.herokuapp.com/events",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
