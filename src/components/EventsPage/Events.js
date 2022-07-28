@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { Route, Routes, Router, useLocation} from "react-router-dom";
 import './Events.css'
 import Event from './Event'
 import Filter from './Filter'
 import EventForm from './EventForm'
+import EventCheckout from './EventCheckout'
 
 function Events() {
   const [data, setData] = useState([])
@@ -43,7 +45,7 @@ function Events() {
     return <Event key={eventObj.id} dataObj={eventObj} />
   })
 
-  console.log(displayEvents)
+  // console.log(displayEvents)
 
 
   //Render events in rows of 4
@@ -75,6 +77,10 @@ function Events() {
       .then((obj) => setData([...data, obj]))
   }
 
+  //Create routes to display more information about a specific event
+  // const match = useLocation();
+  // console.log(match.pathname);
+
   return (
     <div>
       <div>
@@ -90,7 +96,11 @@ function Events() {
 
       <Filter search={search} onCategoryChange={handleCategoryChange} onSearchChange={handleSearchChange} />
 
-      <div >{renderEvents()}</div>
+      <div>{renderEvents()}</div>
+
+      <Routes>
+        <Route path='1' element={<EventCheckout />} />
+      </Routes>
 
       <EventForm onFormSubmit={handleFormSubmit} />
     </div>
