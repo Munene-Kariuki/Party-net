@@ -27,7 +27,6 @@ function Navbar() {
       </div>
       <div className='buttons'>
         <NavLink to="/login"><button className='login'>Log in</button></NavLink>
-        <NavLink to="/signup"><button className='signin'>Sign Up</button></NavLink>
       </div>
     </nav>
   )
