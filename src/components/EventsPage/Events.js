@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Routes, Router, useLocation} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import './Events.css'
 import Event from './Event'
 import Filter from './Filter'
