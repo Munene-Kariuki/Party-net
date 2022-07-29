@@ -44,3 +44,9 @@
   padding: 0.5rem;
 }
 
+.post-event {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+

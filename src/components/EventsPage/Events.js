@@ -10,6 +10,7 @@ function Events() {
   const [data, setData] = useState([])
   const [category, setCategory] = useState("All")
   const [search, setSearch] = useState("")
+  const [showEventForm, setShowEventForm] = useState(false)
 
 
   // fetch events data from api
@@ -77,9 +78,10 @@ function Events() {
       .then((obj) => setData([...data, obj]))
   }
 
-  //Create routes to display more information about a specific event
-  // const match = useLocation();
-  // console.log(match.pathname);
+  //Show/hide event form
+  function handleClick() {
+    setShowEventForm(!showEventForm)
+  }
 
   return (
     <div>
@@ -102,7 +104,8 @@ function Events() {
         <Route path='1' element={<EventCheckout />} />
       </Routes>
 
-      <EventForm onFormSubmit={handleFormSubmit} />
+      <button className='post-event' onClick={handleClick}>{showEventForm ? 'Hide form' : 'Post an event'}</button>
+      {showEventForm? <EventForm onFormSubmit={handleFormSubmit} />: null}
     </div>
   )
 }
