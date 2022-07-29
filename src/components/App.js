@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Reviews from './Reviews/Reviews';
 import Events from './EventsPage/Events';
@@ -8,6 +8,9 @@ import Navbar from './Navbar/Navbar';
 import Login from './LogIn/Login';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Party-net';
+  });
   return (
     <div>
       <Navbar />
